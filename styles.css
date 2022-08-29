@@ -7,27 +7,29 @@
 }
 
 html {
-    scroll-padding-top: 70px; /* height of sticky header */
+    scroll-padding-top: 70px; 
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-}
-header :is(li, a, button) {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    color: rgb(41, 41, 41);
-    text-decoration: none;
+    background-color: white;
 }
 
+/* NAVBAR */
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0.6rem 8%;
-    background-color: rgb(242, 237, 237);
-    opacity: 0.8;
+    background-color: black;
+    opacity: 0.9;
+}
+
+header :is(li, a, button) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
 }
 
 header button {
@@ -37,11 +39,13 @@ header button {
     border-radius: 2.5rem;
     cursor: pointer;
     transition: all o.3s ease 0s;
+    color: rgb(30, 30, 30);
 }
 
 header button:hover {
     background-color: rgb(165, 201, 202, 0.8);
 }
+
 .logo {
     width: 12rem;
     cursor: pointer;
@@ -63,4 +67,65 @@ header button:hover {
 
 .nav-links li a:hover {
     color: #A5C9CA;
+}
+
+
+
+/* WELCOME */
+#welcome-section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    width: 100%;
+    place-items: center;
+
+}
+
+#welcome-section img {
+    max-width: 60rem;
+}
+
+#intro-message{
+    padding: 0% 10% 0 0%;
+
+}
+
+
+#intro-message h1{
+    letter-spacing: 0.4rem;
+    color: #A5C9CA;
+    font-size: 2rem;
+}
+
+#intro-message p{
+    font-size: 1.2rem;
+    color: rgb(30, 30, 30);
+}
+
+#intro-message :is(h1, p){
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0.5rem;
+    
+}
+
+
+#projects {
+    background-color: #121111;
+}
+
+#projects h1{
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+.project-images {
+    display: grid;
+    
+    place-items: center;
+    gap: 2rem;
+}
+
+#projects img {
+    width: 30rem;
+    min-width: 300px;
 }
