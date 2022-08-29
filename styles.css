@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 4.3rem; 
 }
 
-html {
-    scroll-padding-top: 70px; 
+:root {
+    --color1: rgb(30, 30, 30);
+    --color2: rgb(165, 201, 202);
+    --color3: rgb(255,255,255);
+    --h-font-size: 1.5rem
 }
 
 body {
-    background-color: white;
+    background-color: var(--color3);
 }
 
 /* NAVBAR */
@@ -20,8 +26,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0.6rem 8%;
-    background-color: black;
-    opacity: 0.9;
+    background-color: var(--color1);
+    opacity: 0.95;
+    position: fixed;
+    width: 100%;
 }
 
 header :is(li, a, button) {
@@ -66,7 +74,7 @@ header button:hover {
 }
 
 .nav-links li a:hover {
-    color: #A5C9CA;
+    color: var(--color2);
 }
 
 
@@ -88,16 +96,15 @@ header button:hover {
     padding: 0% 10% 0 0%;
 }
 
-
 #intro-message h1{
     letter-spacing: 0.4rem;
-    color: #A5C9CA;
+    color: var(--color2);
     font-size: 2rem;
 }
 
 #intro-message p{
     font-size: 1.2rem;
-    color: rgb(30, 30, 30);
+    color: var(--color1);
 }
 
 #intro-message :is(h1, p){
@@ -107,13 +114,15 @@ header button:hover {
 }
 
 
+/* Projects start */
+
 #projects {
-    background-color: #121111;
+    background-color: var(--color1);
 }
 
 #projects h1{
-    color: #ffffff;
-    font-size: 1rem;
+    color: var(--color3);
+    font-size: var(--h-font-size);
     font-family: 'Montserrat', sans-serif;;
 
 }
@@ -127,4 +136,17 @@ header button:hover {
 #projects img {
     width: 30rem;
     min-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 0.5rem;
+    }
+    header {
+        height: 2rem;
+    }
+    .logo {
+        height: 2rem;
+    }
+
 }
