@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Ric Merque</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+     <!-- NAVBAR -->
     <header>
         <img class="logo" src="images/jrlogo2.png" alt="logo">
         <nav id="navbar">
             <ul class="nav-links">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#intro-message">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect-with-me-section">About</a></li>
             </ul>
         </nav>
         <a class="contact" href="#"><button>Contact</button>
         </a>
     </header>
+
+    <!-- link to js-->
+    <script type="text/javascript" src="script.js"></script>
 
     <!-- START OF WELCOME SECTION -->
     <section id="welcome-section">
@@ -33,8 +39,8 @@
 
     <!-- START OF PROJECTS -->
     <section id="projects">
-        <h1>Here are some of the projects I made usinng HTML and CSS</h1>
-        <div class="project-images">
+        <h1>Here are some projects I made using HTML and CSS</h1>
+        <div class="project-images project-tile">
             <a href="https://timely-strudel-3fe3d9.netlify.app/" target="_blank">
                 <img src="/images/lenipreview.png" alt="leni-page">
             </a>
@@ -51,6 +57,7 @@
     </section>
 
     <section id="connect-with-me-section">
+        <a class="media" id="profile-link" href="https://github.com/JohnRicMerque" target="_blank">Github</a>
 
     </section>
 </body>
