@@ -86,7 +86,6 @@ header button:hover {
 
 #intro-message{
     padding: 0% 10% 0 0%;
-
 }
 
 
@@ -118,9 +117,9 @@ header button:hover {
     font-family: 'Montserrat', sans-serif;;
 
 }
-.project-images {
+.project-images * {
     display: grid;
-    
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     place-items: center;
     gap: 2rem;
 }
