@@ -121,7 +121,7 @@ header button:hover {
 }
 
 .p2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 #intro-message :is(h1, p){
@@ -136,7 +136,7 @@ header button:hover {
     border-radius: 2.5rem;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    background-color: var(--color4)
+    background-color: var(--color4);
 }
 
 /* profile */
@@ -148,6 +148,7 @@ header button:hover {
     flex-direction: column;
     font-family: var(--font-family1);
     padding-bottom: 2rem;
+    background-color: rgb(238, 242, 245);
 }
 
 #my-image {
@@ -228,6 +229,7 @@ header button:hover {
 
 .project-images img:hover{
     filter: grayscale(0%);
+    transform: scale(1.01);
 }
 
 .project-title{
@@ -250,18 +252,55 @@ header button:hover {
     font-weight: bold;
 }
 
+/* CONNECT */
+#connect-with-me-section{
+    height: 80vh;
+    text-align: center;
+}
+
+#connect-with-me-section h1 {
+    letter-spacing: 0.4rem;
+    color: var(--color2);
+    font-size: 2rem;
+    font-family: var(--font-family2);
+    
+}
+
+#connect-with-me-section p {
+    font-family: var(--font-family1);
+    padding: 1rem;
+}
+
+.media-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    margin: 4rem;
+    gap: 1rem;
+}
+
+.media-icons .button-wrapper{
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.media-icons .button-wrapper:hover{
+    transform: scale(1.5)
+}
+
+.media {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.media i {
+    font-size: 3rem;
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/*footer */
 
 @media only screen and (max-width: 600px) {
     * {
@@ -276,6 +315,7 @@ header button:hover {
     }
 
 }
+
 
 @media screen 
   and (min-device-width: 1200px) 
