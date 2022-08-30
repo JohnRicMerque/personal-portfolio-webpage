@@ -346,9 +346,14 @@ footer p {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
     * {
         font-size: 0.5rem;
+    }
+
+    html,body{
+    width:100%;
+    overflow-x:hidden;
     }
 }
 
