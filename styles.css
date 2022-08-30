@@ -173,7 +173,7 @@ header button:hover {
     text-align: center;
 }
 #profile p {
-    text-align: justify;
+    text-align: center;
     padding: 1rem 0;
     letter-spacing: 0.5px;
 }
@@ -186,6 +186,7 @@ header button:hover {
     font-size: 1rem;
     font-family: 'times new roman', sans-serif;
     font-weight: light;
+    text-align: justify;
 }
 
 .profile-message p:last-child span:last-child {
@@ -214,7 +215,6 @@ header button:hover {
     grid-template-columns: repeat( auto-fit, minmax(320px, 1fr));
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 6rem;
     place-items: center;
     gap: 2rem;
     padding: 5% 10%;
@@ -254,6 +254,7 @@ header button:hover {
 
 /* CONNECT */
 #connect-with-me-section{
+    padding-top: 4rem;
     height: 80vh;
     text-align: center;
 }
@@ -273,7 +274,7 @@ header button:hover {
 
 .media-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
     margin: 4rem;
     gap: 1rem;
 }
@@ -281,10 +282,14 @@ header button:hover {
 .media-icons .button-wrapper{
     display: inline-block;
     transition: all 0.3s ease 0s;
+    background-color: var(--color3);
+    border: 0.1rem solid var(--color1);
+    padding: 0.5rem;
 }
 
 .media-icons .button-wrapper:hover{
-    transform: scale(1.5)
+    transform: scale(1.1);
+    background-color: var(--color4);
 }
 
 .media {
@@ -301,6 +306,17 @@ header button:hover {
 
 
 /*footer */
+footer {
+    background-color: var(--color1);
+    color: var(--color3);
+    text-align: center;
+    font-family: var(--font-family1);
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
 
 @media only screen and (max-width: 600px) {
     * {
