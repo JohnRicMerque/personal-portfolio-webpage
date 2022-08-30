@@ -318,36 +318,40 @@ footer p {
     font-size: 0.7rem;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
     * {
-        font-size: 0.4rem;
-    }
-    .section {
-        height: 30vh;
+        font-size: 1.1;
     }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    * {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 0.8rem;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+    * {
+        font-size: 0.6rem;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 300px) {
     * {
         font-size: 0.5rem;
     }
-    .logo {
-        height: 2rem;
-    }
-    .section {
-        height: 50vh;
-    }
-    #connect-with-me-section{
-        height: 50vh;
-    }
 }
 
-@media only screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) {
-    * :not(header){
-        font-size: 1.2rem;
-    }
-  }
+
+
+
